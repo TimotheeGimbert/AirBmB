@@ -33,3 +33,10 @@ bdx = City.create(
     e constater, cher lecteur curieux ...",
     welcome_message: "We are glad to welcome you."
     )
+
+resa = Reservation.create(
+  start_date: "2021-10-30 21:37:11.785765298 +0200",
+  end_date: "2021-10-31 21:37:11.785765298 +0200",
+  housing: Housing.first
+  )
+
