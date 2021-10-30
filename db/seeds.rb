@@ -6,6 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+User.destroy_all
+City.destroy_all
+Housing.destroy_all
+
 me = User.create(
   email: 'tutu@yopmail.com',
   phone_number: '0655255545',
@@ -19,4 +23,13 @@ bdx = City.create(
   zip_code: '33000'
   )
 
-  h = Housing.create(user: me, city: bdx, available_beds: 2)
+  h = Housing.create(
+    user: me,
+    city: bdx,
+    available_beds: 2,
+    price: 24,
+    description: "Ceci est une description aleatoire devant atteindre le nombre d
+    e 140 caractères d'apres mes souvenirs, mais de toute maniere, on a surement deja atteint cette longueur, en tout cas je le souhaite ardement, comme vous pouvez l
+    e constater, cher lecteur curieux ...",
+    welcome_message: "We are glad to welcome you."
+    )
